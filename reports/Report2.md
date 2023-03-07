@@ -199,7 +199,10 @@ F = {q3},
 ```
 
     
-<img width="568" alt="image" src="https://user-images.githubusercontent.com/113386223/223538976-5c2bc286-0fad-458e-a558-aaef94c589e3.png">
+<img width="569" alt="image" src="https://user-images.githubusercontent.com/113386223/223539233-617a60c3-dc61-435e-ba6d-e1cdcc525155.png">
+
+     
+<img width="432" alt="image" src="https://user-images.githubusercontent.com/113386223/223539351-45bd2db3-72f0-4628-b1fa-27e24e64cd6e.png">
 
 
 <p align="justify">&ensp;&ensp;&ensp;  Task 3d. Represent the finite automaton graphically. I added comments in the code. <p>
