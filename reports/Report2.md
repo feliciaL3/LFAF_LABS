@@ -85,8 +85,9 @@ F = {q3},
 
         # If none of the above conditions are met, the grammar is of Type 1
         return 'Type 1'
-  ```
-   
+ ```
+   <img width="155" alt="image" src="https://user-images.githubusercontent.com/113386223/223535992-ce023b5a-220c-4b3b-8582-97a34a5a4064.png">
+
     
  ```
 Variant 15
@@ -122,8 +123,18 @@ F = {q3},
         # Step 6: Create the grammar object and return it
         return Grammar(S, Vt, Vn, P)
  ```
-   
+    
+<img width="208" alt="image" src="https://user-images.githubusercontent.com/113386223/223536064-b6dcbaa8-e094-4c2d-b8e8-8ccd51af8d26.png">
+    
+    
+<p align="center">&ensp;&ensp;&ensp; RG <p>
+    
+<img width="661" alt="image" src="https://user-images.githubusercontent.com/113386223/223536468-436df914-88f2-4946-9be6-ce5bafd2ba91.png">
+    
+
 <p align="justify">&ensp;&ensp;&ensp; Task 3.b. Determine whether your FA is deterministic or non-deterministic. <p>
+    
+    
  ```
     def is_deterministic(self):
         # Step 1: Create a dictionary to hold the transitions for each state
@@ -144,10 +155,12 @@ F = {q3},
         return "IT IS DETERMINISTIC"
 ```
     
+<img width="328" alt="image" src="https://user-images.githubusercontent.com/113386223/223537167-cbdbc59e-e03c-42a5-949f-dcd394644028.png">
+
+<img width="319" alt="image" src="https://user-images.githubusercontent.com/113386223/223537238-f90c3a9e-5010-40b0-9b3c-b1d084c1d7cc.png">
+
     
-<p align="justify">&ensp;&ensp;&ensp; Task 3c. Implement some functionality that would convert an NDFA to a DFA. Firstly, I needed two more functions for implimenting this task 1.Epsilon_Closure 2.Move <p>
-    
- <p align="justify">&ensp;&ensp;&ensp;  The functions Move and Epsilon_Closure are necessary to convert a non-deterministic finite automaton (NFA) to a deterministic finite automaton (DFA) because DFAs do not allow for multiple transitions from a single state on the same input symbol, while NFAs do. <p>
+<p align="justify">&ensp;&ensp;&ensp; Task 3c. Implement some functionality that would convert an NDFA to a DFA. Firstly, I needed two more functions for implimenting this task ( 1.Epsilon_Closure 2.Move ) . The functions Move and Epsilon_Closure are necessary to convert a non-deterministic finite automaton (NFA) to a deterministic finite automaton (DFA) because DFAs do not allow for multiple transitions from a single state on the same input symbol, while NFAs do. <p>
 
  <p align="justify">&ensp;&ensp;&ensp; The Epsilon_Closure function is used to determine all states that can be reached from a given set of states through epsilon transitions, which are transitions that can be taken without consuming any input symbol. This is necessary because these epsilon transitions can lead to additional states that the NFA can be in, and thus need to be taken into account when determining the set of states that the DFA can be in. <p>
 
@@ -186,7 +199,64 @@ F = {q3},
 ```
 
 
+<p align="justify">&ensp;&ensp;&ensp;  Task 3d. Represent the finite automaton graphically. I added comments in the code. <p>
 
-
+```
+import networkx as nx
+import matplotlib.pyplot as plt
+    
+   def draw(self):
+        # Create a directed graph using the states and transitions of the NFA
+        G = nx.DiGraph()
+        G.add_nodes_from(self.states)
+        G.add_edges_from([(t[0], t[2], {'label': t[1]}) for t in self.transitions])
+        # Set the layout of the graph to circular
+        pos = nx.circular_layout(G)
+        # Set the style parameters for the nodes and edges
+        font_family = 'Times New Roman'
+        node_color = '#c28488'
+        node_size = 2400
+        font_size = 22
+        node_border_color = 'black'
+        node_border_width = 2
+        edge_color = '#990610'
+        edge_width = 2
+        arrow_size = 28
+        # Create a new figure and axis for the plot
+        fig, ax = plt.subplots(figsize=(12, 12), facecolor='white', linewidth=2)
+        # Draw the nodes of the graph
+        nx.draw_networkx_nodes(G, pos, node_size=node_size, alpha=0.8, node_color=node_color,
+                               edgecolors=node_border_color, linewidths=node_border_width)
+        # Draw the labels for the nodes
+        nx.draw_networkx_labels(G, pos, font_size=font_size, font_family=font_family, font_weight='bold')
+        # Create a dictionary of edge labels and their positions
+        edge_labels = {(e[0], e[1]): e[2]['label'] for e in G.edges(data=True)}
+        edge_label_pos = nx.draw_networkx_edge_labels(G, pos, edge_labels=edge_labels, font_size=30,
+                                                      font_family=font_family, font_weight='bold',
+                                                      label_pos=0.9,
+                                                      bbox=dict(facecolor='white', edgecolor='none', alpha=0.8),
+                                                      verticalalignment='center')
+        # Set the rotation of the edge labels to horizontal
+        for _, t in edge_label_pos.items():
+            t.set_rotation('horizontal')
+        # Draw the edges of the graph
+        nx.draw_networkx_edges(G, pos, edgelist=G.edges(), arrows=True, arrowsize=arrow_size, width=edge_width,
+                               edge_color=edge_color)
+        # Set the title, axis, and text for the plot
+        ax.set_title("Graph of State Transitions ", fontsize=24, fontweight='bold')
+        ax.set_axis_off()
+        plt.figtext(0.1, 0.1, "Initial State - q0\nFinal State - q3", fontsize=18, fontweight='bold')
+        # Remove the spines of the axis
+        ax.spines['top'].set_visible(False)
+        ax.spines['bottom'].set_visible(False)
+        ax.spines['left'].set_visible(False)
+        ax.spines['right'].set_visible(False)
+        # Show the plot
+        plt.show()
+```
 
     
+<img width="312" alt="image" src="https://user-images.githubusercontent.com/113386223/223537481-b5a272ca-115e-4b94-9fc6-a973d4cb2197.png">
+
+<img width="245" alt="image" src="https://user-images.githubusercontent.com/113386223/223537655-31648d91-c282-4c95-b10a-62e225024532.png">
+
