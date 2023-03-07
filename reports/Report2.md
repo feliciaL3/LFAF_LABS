@@ -271,9 +271,15 @@ import matplotlib.pyplot as plt
 
 
 ## Conclusions and Results
-<p align="justify">&ensp;&ensp;&ensp; In conclusion, this laboratory work aimed to deepen our understanding of automata and their applications. Throughout the lab, we learned about Chomsky hierarchy and implemented a function that classifies grammars based on it. We also worked on a finite automaton and implemented functions to convert it to a regular grammar, determine whether it is deterministic or non-deterministic, and convert an NDFA to a DFA. <p>
+<p align="justify">&ensp;&ensp;&ensp; The laboratory work aimed to deepen our understanding of automata and their applications, as well as to implement various functions related to grammar classification and finite automaton conversion.During the laboratory work, we first reviewed the concept of automata and their use cases. We then proceeded to implement a function in our grammar class that could classify the grammar based on Chomsky hierarchy, which was a continuation of the work in the same repository and project.
 
-<p align="justify">&ensp;&ensp;&ensp; Additionally, we had the option to represent the finite automaton graphically using external libraries, tools, or APIs. By completing these tasks, we gained practical experience in automata theory and programming, which can be applied in various fields, including computer science, linguistics, and artificial intelligence. <p>
+<p align="justify">&ensp;&ensp;&ensp; Based on the variant number, we obtained the finite automaton definition and then performed several tasks. First, we implemented the conversion of a finite automaton to a regular grammar. We then determined whether the finite automaton was deterministic or non-deterministic. One of the most important tasks was implementing a functionality that could convert a non-deterministic finite automaton (NDFA) to a deterministic finite automaton (DFA). This required the use of functions such as Move and Epsilon_Closure. <p> 
+
+<p align="justify">&ensp;&ensp;&ensp; Finally, as an optional bonus task, we represented the finite automaton graphically using external libraries, tools or APIs. This involved gathering and sending data about the automaton, and then returning a visual representation. <p>
+
+<p align="justify">&ensp;&ensp;&ensp; Overall, the laboratory work helped us to gain a deeper understanding of automata, as well as to develop practical skills in implementing various functions related to grammar classification and finite automaton conversion. <p>
+
+
     
 ## References
 
