@@ -160,11 +160,11 @@ F = {q3},
 <img width="319" alt="image" src="https://user-images.githubusercontent.com/113386223/223537238-f90c3a9e-5010-40b0-9b3c-b1d084c1d7cc.png">
 
     
-<p align="justify">&ensp;&ensp;&ensp; Task 3c. Implement some functionality that would convert an NDFA to a DFA. Firstly, I needed two more functions for implimenting this task ( 1.Epsilon_Closure 2.Move ) . The functions Move and Epsilon_Closure are necessary to convert a non-deterministic finite automaton (NFA) to a deterministic finite automaton (DFA) because DFAs do not allow for multiple transitions from a single state on the same input symbol, while NFAs do. <p>
+* <p align="justify">&ensp;&ensp;&ensp; Task 3c. Implement some functionality that would convert an NDFA to a DFA. Firstly, I needed two more functions for implimenting this task ( 1.Epsilon_Closure 2.Move ) . The functions Move and Epsilon_Closure are necessary to convert a non-deterministic finite automaton (NFA) to a deterministic finite automaton (DFA) because DFAs do not allow for multiple transitions from a single state on the same input symbol, while NFAs do. <p>
 
- <p align="justify">&ensp;&ensp;&ensp; The Epsilon_Closure function is used to determine all states that can be reached from a given set of states through epsilon transitions, which are transitions that can be taken without consuming any input symbol. This is necessary because these epsilon transitions can lead to additional states that the NFA can be in, and thus need to be taken into account when determining the set of states that the DFA can be in. <p>
+ * <p align="justify">&ensp;&ensp;&ensp; The Epsilon_Closure function is used to determine all states that can be reached from a given set of states through epsilon transitions, which are transitions that can be taken without consuming any input symbol. This is necessary because these epsilon transitions can lead to additional states that the NFA can be in, and thus need to be taken into account when determining the set of states that the DFA can be in. <p>
 
- <p align="justify">&ensp;&ensp;&ensp; The Move function is used to determine all states that can be reached from a given set of states on a given input symbol. This is necessary because a single input symbol in the DFA can only lead to one state, while in the NFA it can lead to multiple states. <p>
+ * <p align="justify">&ensp;&ensp;&ensp; The Move function is used to determine all states that can be reached from a given set of states on a given input symbol. This is necessary because a single input symbol in the DFA can only lead to one state, while in the NFA it can lead to multiple states. <p>
 
     
 ```
