@@ -198,6 +198,9 @@ F = {q3},
         return e_closure
 ```
 
+    
+<img width="568" alt="image" src="https://user-images.githubusercontent.com/113386223/223538976-5c2bc286-0fad-458e-a558-aaef94c589e3.png">
+
 
 <p align="justify">&ensp;&ensp;&ensp;  Task 3d. Represent the finite automaton graphically. I added comments in the code. <p>
 
@@ -259,4 +262,21 @@ import matplotlib.pyplot as plt
 <img width="312" alt="image" src="https://user-images.githubusercontent.com/113386223/223537481-b5a272ca-115e-4b94-9fc6-a973d4cb2197.png">
 
 <img width="245" alt="image" src="https://user-images.githubusercontent.com/113386223/223537655-31648d91-c282-4c95-b10a-62e225024532.png">
+
+
+
+
+
+## Conclusions and Results
+<p align="justify">&ensp;&ensp;&ensp; In conclusion, this laboratory work aimed to deepen our understanding of automata and their applications. Throughout the lab, we learned about Chomsky hierarchy and implemented a function that classifies grammars based on it. We also worked on a finite automaton and implemented functions to convert it to a regular grammar, determine whether it is deterministic or non-deterministic, and convert an NDFA to a DFA. <p>
+
+<p align="justify">&ensp;&ensp;&ensp; , we had the option to represent the finite automaton graphically using external libraries, tools, or APIs. By completing these tasks, we gained practical experience in automata theory and programming, which can be applied in various fields, including computer science, linguistics, and artificial intelligence. <p>
+    
+## References
+
+-   Conversion [online source]: https://www.scirp.org/html/5-9301558_27481.htm
+-   Construction of Regular Grammar [online source]: https://mycareerwise.com/content/construction-of-regular-grammar-from-finite-automata
+-   Regular grammar (Model regular grammars ) [online source]: https://www.geeksforgeeks.org/regular-grammar-model-regular-grammars/
+-   Language by Grammar [online source]: https://www.tutorialspoint.com/automata_theory/language_generated_by_grammars.html
+-   Cojuhari I., Duca L., & Fiodorov I. Formal Languages and Finite Automata Guide for practical lessons. Technical University of Moldova
 
