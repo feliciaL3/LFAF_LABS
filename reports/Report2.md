@@ -52,7 +52,7 @@ F = {q3},
 ```
     
     
-<p align="justify">&ensp;&ensp;&ensp;  For the first practically task (task 2)   I provided a function in my grammar type/class that could classify the grammar based on Chomsky hierarchy. I added comments and explanation directly in the code. <p>
+ <p align="justify">&ensp;&ensp;&ensp;  For the first practically task (task 2)   I provided a function in my grammar type/class that could classify the grammar based on Chomsky hierarchy. I added comments and explanation directly in the code. <p>
     
     
 ```
@@ -102,7 +102,7 @@ F = {q3},
 δ(q2,c) = q0.
 ```
     
-<p align="justify">&ensp;&ensp;&ensp; Next, I used my Variant for The task 3. to  Implement conversion of a finite automaton to a regular grammar. This code defines a method called convert_to_grammar() that takes in a Grammar object as input and returns a new Grammar object that represents the same language as the current object, but in a different format. <p>
+<p align="justify">&ensp;&ensp;&ensp; Next, I used my Variant for  The task 3. to  Implement conversion of a finite automaton to a regular grammar. This code defines a method called convert_to_grammar() that takes in a Grammar object as input and returns a new Grammar object that represents the same language as the current object, but in a different format. <p>
 
 ```
     def convert_to_grammar(self, Grammar):
@@ -127,12 +127,12 @@ F = {q3},
 <img width="208" alt="image" src="https://user-images.githubusercontent.com/113386223/223536064-b6dcbaa8-e094-4c2d-b8e8-8ccd51af8d26.png">
     
     
-<p align="center">&ensp;&ensp;&ensp; RG <p>
+* <p align="center">&ensp;&ensp;&ensp; RG <p>
     
 <img width="661" alt="image" src="https://user-images.githubusercontent.com/113386223/223536468-436df914-88f2-4946-9be6-ce5bafd2ba91.png">
     
 
-<p align="justify">&ensp;&ensp;&ensp; Task 3.b. Determine whether your FA is deterministic or non-deterministic. <p>
+* <p align="justify">&ensp;&ensp;&ensp; Task 3.b. Determine whether your FA is deterministic or non-deterministic. <p>
     
     
  ```
@@ -205,7 +205,7 @@ F = {q3},
 <img width="432" alt="image" src="https://user-images.githubusercontent.com/113386223/223539351-45bd2db3-72f0-4628-b1fa-27e24e64cd6e.png">
 
 
-<p align="justify">&ensp;&ensp;&ensp;  Task 3d. Represent the finite automaton graphically. I added comments in the code. <p>
+* <p align="justify">&ensp;&ensp;&ensp;  Task 3d. Represent the finite automaton graphically. I added comments in the code. <p>
 
 ```
 import networkx as nx
